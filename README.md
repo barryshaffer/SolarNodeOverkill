@@ -1,6 +1,6 @@
 # SolarNodeOverkill
 
-> **Meshtastic Solar Node** — A robust, off-grid Meshtastic mesh radio node powered by a 12 VDC / 20 W solar charge system and monitored by a remote ESP32, supporting a RAK 1 W LoRa device.
+> **Meshtastic Solar Node** — A robust, Meshtastic mesh radio node powered by a 12 VDC / 20 W solar charge system and monitored with an embedded MCU, supporting a RAK 1 W LoRa device. Intened to serve as a self sustained Rooftop / Backyard base Client.
 
 ---
 
@@ -21,8 +21,26 @@
 ---
 
 ## Overview
+SolarNodeOverkill is the result of two years of trial, error, and heat-induced frustration. After watching standard Lithium-ion setups melt under the brutal Arizona sun, I built this to actually survive the summer.
 
-SolarNodeOverkill is a fully self-contained, solar-powered Meshtastic node designed for remote deployment. The system combines a small solar panel, a 12 V LiFePO₄ (or lead-acid) battery, a dedicated solar charge controller, a monitoring ESP32, and a RAK 1 W LoRa radio module. The entire electronics stack lives inside a weatherproof enclosure produced with 3D-printed mounts and brackets.
+### The "Heat-Proof" Strategy
+I swapped Li-ion for 12V LiFePO₄ batteries because they’re affordable, easy to find, and—most importantly—can handle higher charging temps without throwing a fit.
+
+To keep things from cooking, I added an ESP32 to act as a thermal babysitter. If the enclosure gets too hot:
+
+- It kicks on an exhaust fan to pull out the heat.
+
+- If things get dangerous, it kills the charging entirely to save the battery.
+
+### The Tech Stack
+**The Power:** A 20W monocrystalline solar panel, a dedicated 10A charge controller, and a 12V 6AH LiFePO₄ battery. A 12V-to-5V buck transformer feeds the RAK and ESP32.
+
+**The Brain:** A XIAO ESP32-C6 for monitoring Temp, Current and Voltage as well as controlling enclosure fans and charge disconnect relays. HomeAssistant integration for data logging.    
+
+**The Radio:** A RAK 1W LoRa module for more reliable long-range comms.
+
+### The Build
+Everything—except the radio—is tucked into a weatherproof box using custom 3D-printed mounts. To get the best possible signal, the RAK module is mounted directly to a 5.8dBi antenna at the very top of the mast, cutting out the signal loss you'd get from a long cable.
 
 <!-- TODO: Add a hero photo of the completed node -->
 ![Completed Node](images/hero_complete_node.jpg)
@@ -31,8 +49,8 @@ SolarNodeOverkill is a fully self-contained, solar-powered Meshtastic node desig
 
 ## Features
 
-- **20 W solar input** via a 12 V solar panel with MPPT/PWM charge controller
-- **12 V battery bank** (LiFePO₄ recommended) for extended overnight operation
+- **20 W solar input** via a 20 V solar panel with PWM charge controller
+- **12 V battery bank** (LiFePO₄) for extended multi-cloudy day operation
 - **RAK WisNode 1 W LoRa radio** running Meshtastic firmware
 - **ESP32 monitoring node** for remote telemetry (voltage, current, temperature)
 - **Weatherproof enclosure** with 3D-printed internal mounts
