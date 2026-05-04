@@ -125,17 +125,17 @@ SolarNodeOverkill/
 
 | # | Component | Description | Qty | Unit Cost (USD) | Supplier / Part # |
 |---|-----------|-------------|-----|-----------------|-------------------|
-| 1 | Solar Panel | 20 W, 12 V monocrystalline | 1 | <!-- TODO --> | <!-- TODO --> |
+| 1 | Solar Panel | [Topsolar 30W 12V/24V Solar Panel Kit, Monocrystalline Solar Battery Trickle Charger Maintainer +10A PWM Charge Controller + Adjustable Mount Bracket for Car, RV, Boat, Motorcycle, Off-Grid System](https://www.amazon.com/dp/B0CSCQKJ32?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_3&th=1) | 1 | <!-- TODO --> | <!-- TODO --> |
 | 2 | Solar Charge Controller | MPPT or PWM, 12 V, ≥ 10 A | 1 | <!-- TODO --> | <!-- TODO --> |
-| 3 | Battery | 12 V LiFePO₄, ≥ 20 Ah | 1 | <!-- TODO --> | <!-- TODO --> |
-| 4 | RAK WisNode LoRa Radio | RAK Wireless 1 W LoRa module | 1 | <!-- TODO --> | <!-- TODO --> |
-| 5 | ESP32 Development Board | ESP32-DevKitC or equivalent | 1 | <!-- TODO --> | <!-- TODO --> |
-| 6 | Voltage / Current Sensor | INA226 or INA219 module | 1 | <!-- TODO --> | <!-- TODO --> |
-| 7 | Buck Converter (5 V) | 12 V → 5 V, ≥ 3 A | 1 | <!-- TODO --> | <!-- TODO --> |
-| 8 | Weatherproof Enclosure | IP65 ABS box, ≥ 200×150×75 mm | 1 | <!-- TODO --> | <!-- TODO --> |
-| 9 | LoRa Antenna | 915 MHz (or regional freq.), N/SMA | 1 | <!-- TODO --> | <!-- TODO --> |
-| 10 | Cable Glands | PG-7 or PG-9, waterproof | 4 | <!-- TODO --> | <!-- TODO --> |
-| 11 | Anderson Powerpole Connectors | 30 A, red/black pairs | 1 pkg | <!-- TODO --> | <!-- TODO --> |
+| 3 | Battery | [DC HOUSE 12V 6Ah Mini Lithium LiFePO4 Deep Cycle Battery, 4000+ Cycles Lithium Iron Phosphate Rechargeable Battery Built-in BMS](https://www.amazon.com/dp/B0CNRH6WSL?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_4) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 4 | RAK WisNode LoRa Radio | [RAK Wireless 1 W Booster Kit](https://store.rokland.com/products/coming-soon-wismesh-1w-booster-starter-kit-with-nrf52840-sx1262-and-sky66122-pa-for-extended-meshtastic-range?_pos=1&_psq=1W&_ss=e&_v=1.0) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 5 | ESP32 MCU | [Seeedstudio XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-StudioXIAO-ESP32C6-3PCS-p-5918.html) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 6 | Voltage / Current Sensor | INA260 module | 2 | <!-- TODO --> | <!-- TODO --> |
+| 7 | Buck Converter (5 V) | [DC12V-24V to 5V 3A Micro USB Buck Converter Module Step Down Power Adapter](https://www.amazon.com/dp/B0B6NZBWV4?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_24&th=1) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 8 | Weatherproof Enclosure | [ IP67 Weatherproof Dustproof Enclosure with Hinged Cover, Mounting Plate,Wall Brackets for Power Project 8.7"X6.7"X4.5"](https://www.amazon.com/dp/B0C5TKF5CN?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 9 | LoRa Antenna | 915 MHz, N | 1 | <!-- TODO --> | <!-- TODO --> |
+| 10 | Enclosure Air Vent | [IPV-1115 IP32 Air Vent Fan Dia 2.91" L x 2.76" W x 2" D](https://www.amazon.com/dp/B00L3QTZRY?ref=ppx_yo2ov_dt_b_fed_asin_title) | 1 | <!-- TODO --> | <!-- TODO --> |
+| 11 | Toggle clamp Connectors | 30 A, red/black pairs | 1 pkg | <!-- TODO --> | <!-- TODO --> |
 | 12 | Printed Parts | See [3D Print Files](#3d-print-files) | — | — | This repo |
 | 13 | Misc. Hardware | M3/M4 screws, standoffs, zip ties | 1 lot | <!-- TODO --> | <!-- TODO --> |
 
